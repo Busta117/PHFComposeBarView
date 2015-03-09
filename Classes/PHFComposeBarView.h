@@ -75,6 +75,12 @@ extern NSString *const PHFComposeBarViewFrameEndUserInfoKey;          // NSValue
 // is set. Thus, to hide the button, set this property to nil.
 @property (strong, nonatomic) UIImage *utilityButtonImage UI_APPEARANCE_SELECTOR;
 
+@property (strong, nonatomic, readonly) UIView *backgroundView;
+@property (strong, nonatomic, readonly) UIView *topLineView;
+@property (strong, nonatomic, readonly) UILabel *charCountLabel;
+@property (strong, nonatomic, readonly) UIButton *textContainer;
+@property (assign, nonatomic) CGFloat previousTextHeight;
+
 - (void)setText:(NSString *)text animated:(BOOL)animated;
 
 @end
